@@ -1,4 +1,4 @@
-import  { Component } from "react";
+import { Component } from "react";
 
 // 1. Define an interface for the component's state
 interface CounterState {
@@ -6,7 +6,7 @@ interface CounterState {
 }
 
 // 2. Define a class component with state type
-class Counter extends Component<CounterState> {
+class Counter extends Component<Record<string, never>, CounterState> {
   state: CounterState = {
     count: 0, // Initial count state as a number
   };
